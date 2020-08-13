@@ -14,7 +14,7 @@ namespace BlazorApp
         {
             try
             {
-                LogExtentions.ConfigureSerilog($"{nameof(BlazorApp)}-{{0:yyyy.MM.dd}}");
+                MyExtentions.Elasticsearch.ConfigureSerilog(nameof(BlazorApp));
 
                 Log.Information("Starting host...");
                 CreateHostBuilder(args).Build().Run();
