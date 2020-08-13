@@ -5,4 +5,4 @@ ENV "ASPNETCORE_ENVIRONMENT"="Development"
 WORKDIR /app
 EXPOSE 80
 COPY ./bin/Debug/netcoreapp3.1/publish /app
-ENTRYPOINT ["dotnet", "AntDesign.Docs.Server.dll"]
+ENTRYPOINT ["dotnet", "BlazorAppr.dll"]
