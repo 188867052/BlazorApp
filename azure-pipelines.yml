@@ -42,7 +42,7 @@ steps:
   displayName: Docker build
   inputs:
     command: 'build'
-    Dockerfile: '**/BlazorApp/Dockerfile'
+    Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
     arguments: '-t 542153354/blazorapp:v1.0'
 
 - task: CmdLine@2
